@@ -1,0 +1,28 @@
+[diff "astextplain"]
+	textconv = astextplain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[http]
+	sslBackend = openssl
+	sslCAInfo = C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+[core]
+	autocrlf = true
+	fscache = true
+	symlinks = false
+	editor = "\"C:\\\\Program Files\\\\JetBrains\\\\IntelliJIdea2024.2\\\\bin\\\\idea64.exe\" "
+[pull]
+	rebase = false
+[credential]
+	helper = manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[init]
+	defaultBranch = master
+[user]
+	email = dloskut@gmail.com
+	name = DmitryLosk
+[alias]
+	history = log --graph --oneline --all

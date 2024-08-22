@@ -1,0 +1,5 @@
+[user]
+	email = dloskut@gmail.com
+	name = DmitryLosk
+[alias]
+	history = log --graph --oneline --all
